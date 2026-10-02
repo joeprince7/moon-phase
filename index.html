@@ -52,7 +52,9 @@ input[type=range]{flex:1;min-width:80px;accent-color:var(--sun)}
 .rise div{display:flex;gap:8px;align-items:baseline}
 .rise dt{color:var(--muted);font-size:.85em}
 .rise dd{margin:0;font-weight:700;font-size:1.05em}
-.by{margin:0 0 .4em;color:var(--muted);font-size:.8em;letter-spacing:.06em}
+.titleRow{display:flex;align-items:baseline;gap:.8em;flex-wrap:wrap;margin-bottom:.2em}
+.titleRow h1{margin:0}
+.by{margin:0;color:var(--muted);font-size:.8em;letter-spacing:.06em}
 .note{color:var(--muted);font-size:.85em;margin:0}
 </style>
 
@@ -65,9 +67,8 @@ input[type=range]{flex:1;min-width:80px;accent-color:var(--sun)}
 
   <aside>
     <header>
-      <h1>月相</h1>
-      <p class="by">作者：Joeprince</p>
-      <p class="sub">從北極上空往下看<br>地球逆時針自轉(向東轉, 由西向東)<br>太陽光從右邊照來<br>點月亮可以選位置</p>
+      <div class="titleRow"><h1>月相</h1><p class="by">作者：Joeprince</p></div>
+      <p class="sub">從北極上空往下看<br>地球逆時針自轉(向東轉, 由西向東)</p>
     </header>
     <div class="box">
       <p class="label">地球自轉</p>
